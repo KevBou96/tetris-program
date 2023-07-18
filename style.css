@@ -1,0 +1,113 @@
+.main-title {
+    font-size: 33px;
+    position: relative;
+    left: 170px;
+}
+
+.game-container {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.grid {
+    position: relative;
+    left: 100px;
+    top: 50px;
+    right: 100px;
+    bottom: 50px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:black;
+}
+
+.grid-squares {
+    height: 20px;
+    width: 20px;
+    -webkit-box-sizing: border-box;
+    border-style: double;
+    border-color: white;
+    background-color:#bcbcbc;
+
+}
+
+.mini-grid {
+    width: 80px;
+    height: 80px;
+    background-color: #bcbcbc;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -350px;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+    -webkit-box-sizing: border-box;
+    border-color: white;
+    border-style: double;
+}
+
+.score-title {
+    align-items: center;
+    display: flex;
+    left: 245px;
+    position: relative;
+}
+
+.start-button {
+    transition: 0.4s;
+    left: 383px;
+    display: flex;
+    position: relative;
+    top: 200px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 14px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.start-button:hover {
+    background-color: white ;
+    color: blue;
+}
+
+.tetromino {
+    
+}
+
+.tetrominoO {
+    background-color: #ffff00;
+}
+
+.tetrominoI {
+    background-color: #00ffff;
+}
+
+.tetrominoT {
+    background-color: purple;
+}
+
+.tetrominoS {
+    background-color: green;
+}
+
+.tetrominoiL {
+    background-color: blue;
+}
+
+.tetrominoZ {
+    background-color: orange;
+}
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="app.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css"></link>
+        <title>Basic tetris</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <div class="title-container">
+                <h1 class="main-title">TETRIS GAME</h1>
+            </div>
+            <div class="score-container">
+                <h3 class="score-title" id="score"></h3>
+            </div>
+          
+            <button class="start-button" id="start-button">Start/Pause</button>
+            <div class="grid">
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="grid-squares"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            <div class="taken"></div>
+            </div>
+            <div class="mini-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
